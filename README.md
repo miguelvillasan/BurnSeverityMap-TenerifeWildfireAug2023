@@ -13,7 +13,7 @@ In this context, remote sensing emerges as a crucial tool. This technique involv
 
 To develop a fire severity map based on the calculation of the Normalized Burn Ratio (NBR) using Sentinel-2 satellite images and process the data using the Python programming language, focusing specifically on the Tenerife incident of 2023.
 
-## Methodology
+## Methodology 
 
 1. Data Acquisition: Satellite images will be acquired from the Copernicus portal, specifically those corresponding to the Sentinel-2 satellite.
 

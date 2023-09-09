@@ -21,11 +21,15 @@ To develop a fire severity map based on the calculation of the Normalized Burn R
 
 3. NBR Calculation: NBR is a formula based on the reflectance of the near-infrared (NIR) and shortwave infrared (SWIR) bands. The formula is:
 
-\[ NBR = \frac{(NIR - SWIR)}{(NIR + SWIR)} \]
+```math
+ NBR = \frac{(NIR - SWIR)}{(NIR + SWIR)} 
+```
 
 To determine the fire's severity, the NBR will be calculated both before and after the event. Then, a subtraction between the two will be carried out to determine the change:
 
-\[ \Delta NBR = NBR_{\text{before}} - NBR_{\text{after}} \]
+```math
+\Delta NBR = NBR_{\text{before}} - NBR_{\text{after}} 
+```
 
 4. Severity Classification: Based on the ΔNBR values, the fire's severity is categorized into different levels, such as low, moderate, and high.
 

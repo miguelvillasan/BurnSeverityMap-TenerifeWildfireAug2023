@@ -15,11 +15,11 @@ To develop a fire severity map based on the calculation of the Normalized Burn R
 
 ## Methodology
 
-    Data Acquisition: Satellite images will be acquired from the Copernicus portal, specifically those corresponding to the Sentinel-2 satellite.
+Data Acquisition: Satellite images will be acquired from the Copernicus portal, specifically those corresponding to the Sentinel-2 satellite.
 
-    Pre-processing: Before calculating the NBR, it is essential to pre-process the images. This includes atmospheric corrections, spatial alignment, and cloud filtering.
+Pre-processing: Before calculating the NBR, it is essential to pre-process the images. This includes atmospheric corrections, spatial alignment, and cloud filtering.
 
-    NBR Calculation: NBR is a formula based on the reflectance of the near-infrared (NIR) and shortwave infrared (SWIR) bands. The formula is:
+NBR Calculation: NBR is a formula based on the reflectance of the near-infrared (NIR) and shortwave infrared (SWIR) bands. The formula is:
 
 NBR=(NIR−SWIR)(NIR+SWIR)NBR=(NIR+SWIR)(NIR−SWIR)​
 
@@ -27,7 +27,7 @@ To determine the fire's severity, the NBR will be calculated both before and aft
 
 ΔNBR=NBRbefore−NBRafterΔNBR=NBRbefore​−NBRafter​
 
-    Severity Classification: Based on the ΔNBR values, the fire's severity is categorized into different levels, such as low, moderate, and high.
+Severity Classification: Based on the ΔNBR values, the fire's severity is categorized into different levels, such as low, moderate, and high.
 
 ## Case Study: Tenerife Forest Fire of 2023
 

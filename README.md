@@ -15,19 +15,19 @@ To develop a fire severity map based on the calculation of the Normalized Burn R
 
 ## Methodology
 
-Data Acquisition: Satellite images will be acquired from the Copernicus portal, specifically those corresponding to the Sentinel-2 satellite.
+1. Data Acquisition: Satellite images will be acquired from the Copernicus portal, specifically those corresponding to the Sentinel-2 satellite.
 
-Pre-processing: Before calculating the NBR, it is essential to pre-process the images. This includes atmospheric corrections, spatial alignment, and cloud filtering.
+2. Pre-processing: Before calculating the NBR, it is essential to pre-process the images. This includes atmospheric corrections, spatial alignment, and cloud filtering.
 
-NBR Calculation: NBR is a formula based on the reflectance of the near-infrared (NIR) and shortwave infrared (SWIR) bands. The formula is:
+3. NBR Calculation: NBR is a formula based on the reflectance of the near-infrared (NIR) and shortwave infrared (SWIR) bands. The formula is:
 
-NBR=(NIR−SWIR)(NIR+SWIR)NBR=(NIR+SWIR)(NIR−SWIR)​
+\[ NBR = \frac{(NIR - SWIR)}{(NIR + SWIR)} \]
 
 To determine the fire's severity, the NBR will be calculated both before and after the event. Then, a subtraction between the two will be carried out to determine the change:
 
-ΔNBR=NBRbefore−NBRafterΔNBR=NBRbefore​−NBRafter​
+\[ \Delta NBR = NBR_{\text{before}} - NBR_{\text{after}} \]
 
-Severity Classification: Based on the ΔNBR values, the fire's severity is categorized into different levels, such as low, moderate, and high.
+4. Severity Classification: Based on the ΔNBR values, the fire's severity is categorized into different levels, such as low, moderate, and high.
 
 ## Case Study: Tenerife Forest Fire of 2023
 
@@ -40,6 +40,38 @@ Through the Sentinel-2 satellite from the Copernicus program, there is an aim to
 ![20230825_TenerifeFire](https://github.com/miguelvillasan/BurnSeverity-TenerifeFireAug2023/assets/112619698/9d0e0fba-2240-41a9-950f-788024b1d32e)
 
 Source:
+
+## Getting Started
+
+1. Cloning the Repository
+
+To begin, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/miguelvillasan/BurnSeverityMap-TenerifeWildfireAug2023
+```
+2. Setting up the Python Environment
+
+Once you have the repository on your local machine, navigate to the directory:
+
+```bash
+cd BurnSeverityMap-TenerifeWildfireAug2023
+```
+
+Next, set up the Python environment using the provided requirements.txt file. This file lists all the Python packages required for this project. Install them with:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. GeoJSON File
+
+A GeoJSON file is provided which contains the coordinates of the Tenerife 2023 fire. This will be used to scope our analysis to the affected region. Make sure to refer to this file in your analysis scripts or notebooks as it provides essential spatial data.
+
+4. Analysis Notebook
+
+The repository also includes a Jupyter Notebook which contains the Python code used to calculate the fire severity map using the NBR index. 
+
 
 ## Conclusion
 

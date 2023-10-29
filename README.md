@@ -1,7 +1,7 @@
 # Burn Severity Map of Tenerife wildfire, August 2023.
 ![20230818_IFArafoCandelariaSentinel2](https://github.com/miguelvillasan/BurnSeverity-TenerifeFireAug2023/assets/112619698/0bd62cd9-9417-4b74-85bd-d3d90e415ba4)
 
-Source: 
+Source: https://www.copernicus.eu/en/media/image-day-gallery/ifarafocandelaria-fire-still-burning-tenerife
 
 ## Introduction
 
@@ -11,7 +11,7 @@ In this context, remote sensing emerges as a crucial tool. This technique involv
 
 ## Objective
 
-To develop a fire severity map based on the calculation of the Normalized Burn Ratio (NBR) using Sentinel-2 satellite images and process the data using the Python programming language, focusing specifically on the Tenerife incident of 2023.
+To develop a fire severity map based on the calculation of the [Normalized Burn Ratio (NBR)](https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio) using Sentinel-2 satellite images and process the data using the Python programming language, focusing specifically on the Tenerife incident of 2023.
 
 ## Methodology 
 
@@ -43,7 +43,7 @@ Through the Sentinel-2 satellite from the Copernicus program, there is an aim to
 
 ![20230825_TenerifeFire](https://github.com/miguelvillasan/BurnSeverity-TenerifeFireAug2023/assets/112619698/9d0e0fba-2240-41a9-950f-788024b1d32e)
 
-Source:
+Source: https://www.copernicus.eu/en/media/image-day-gallery/biggest-wildfire-tenerife-last-40-years
 
 ## Getting Started
 
